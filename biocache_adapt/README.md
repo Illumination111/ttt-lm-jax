@@ -15,10 +15,10 @@ does not label the full Flax parameter tree as dynamic state.
 Importing `biocache_adapt` does not import JAX or Flax. `jax_available` uses
 module discovery only, preserving optional delayed import.
 
-The common API is `reset`, `update`, `query`, `persistent_state`,
-`static_extra_state`, and `temporary_state`. It also includes recursive pytree
-byte accounting, timing, configurable budgets, a manifest schema, and JSONL
-schemas for delayed recall and VNBench features.
+The common callable API is `reset()`, `update()`, `query()`,
+`persistent_state()`, `static_extra_state()`, and `temporary_state()`. It also
+includes recursive pytree byte accounting, timing, configurable budgets, a
+manifest schema, and JSONL schemas for delayed recall and VNBench features.
 
 No-model validation:
 
